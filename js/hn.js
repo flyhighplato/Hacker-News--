@@ -33,6 +33,7 @@ var HN = {
 		$('img[src="http://ycombinator.com/images/y18.gif"]').parent().attr({"href": "http://news.ycombinator.com/"});
 		$('.title').each(function(){
 		    $(this).find('a').addClass("post_title");
+            $(this).find('a').attr({"target":"_blank"});
 		});
 		$("input[name='q']").val("Search");
 		
